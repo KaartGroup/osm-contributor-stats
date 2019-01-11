@@ -34,10 +34,10 @@ users[0] = ["abc","def","gjol"]
 users[1] = ["zyx","avb Yul"]
 """
 
-print('Enter Start Date:')
+print('Enter Start Date (YYYY-MM-DD):')
 from_date = raw_input()
 
-print('Enter End Date:')
+print('Enter End Date (YYYY-MM-DD):')
 to_date = raw_input()
 
 print('Enter BBOX (min_lon, max_lon, min_lat, max_lat):')

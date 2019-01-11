@@ -781,8 +781,8 @@ class OsmContributorStats:
 		#
 		time_from="T00:00:00Z"
 		time_to="T23:59:59Z"
-		nom_changeset_list=prefix+from_date+"-"+to_date+"_changeset_hist_list.txt"
-		nom_changeset_objects=prefix+from_date+"-"+to_date+"_changeset_hist_objects.txt"
+		nom_changeset_list=prefix+"/"+prefix+from_date+"-"+to_date+"_changeset_hist_list.txt"
+		nom_changeset_objects=prefix+"/"+prefix+from_date+"-"+to_date+"_changeset_hist_objects.txt"
 		#
 		print "="*100
 		fi_changesets_list = open(nom_changeset_list, 'wb')

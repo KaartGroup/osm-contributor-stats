@@ -781,6 +781,7 @@ class OsmContributorStats:
 		#
 		time_from="T00:00:00Z"
 		time_to="T23:59:59Z"
+		os.mkdir(prefix)
 		nom_changeset_list=prefix+"/"+prefix+from_date+"-"+to_date+"_changeset_hist_list.txt"
 		nom_changeset_objects=prefix+"/"+prefix+from_date+"-"+to_date+"_changeset_hist_objects.txt"
 		#

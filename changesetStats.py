@@ -13,6 +13,9 @@
 """
 import os
 import OsmApi
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 # Instantiation classe OsmApi
 osmApi = OsmApi.OsmApi(debug=False)
 import OsmContributorStats

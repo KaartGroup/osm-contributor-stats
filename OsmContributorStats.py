@@ -781,8 +781,9 @@ class OsmContributorStats:
 		#
 		time_from="T00:00:00Z"
 		time_to="T23:59:59Z"
-		nom_changeset_list=prefix+from_date+"-"+to_date+"_changeset_hist_list.txt"
-		nom_changeset_objects=prefix+from_date+"-"+to_date+"_changeset_hist_objects.txt"
+		os.mkdir(prefix)
+		nom_changeset_list=prefix+'/'+prefix+from_date+"-"+to_date+"_changeset_hist_list.txt"
+		nom_changeset_objects=prefix+'/'+prefix+from_date+"-"+to_date+"_changeset_hist_objects.txt"
 		#
 		print "="*100
 		fi_changesets_list = open(nom_changeset_list, 'wb')
@@ -841,14 +842,14 @@ class OsmContributorStats:
 		#
 		time_from="T00:00:00Z"
 		time_to="T23:59:00Z"
-		nom_changeset_list=prefix+from_date+"-"+to_date+"_changeset_hist_list.txt"
-		nom_changeset_objects=prefix+from_date+"-"+to_date+"_changeset_hist_objects.txt"
-		nom_changeset_objects_json=prefix+from_date+"-"+to_date+"_changeset_hist_objects.json"
-		nom_csv_dim=prefix+from_date+"-"+to_date+"_changeset_dim.csv"
-		nom_date=prefix+from_date+"-"+to_date
-		prefix_users=prefix+from_date+"-"+to_date+".csv"
-		prefix_team=prefix+from_date+"-"+to_date+"-team.csv"
-		prefix_changesets=prefix+from_date+"-"+to_date+"-changeset.csv"
+		nom_changeset_list=prefix+'/'+prefix+from_date+"-"+to_date+"_changeset_hist_list.txt"
+		nom_changeset_objects=prefix+'/'+prefix+from_date+"-"+to_date+"_changeset_hist_objects.txt"
+		nom_changeset_objects_json=prefix+'/'+prefix+from_date+"-"+to_date+"_changeset_hist_objects.json"
+		nom_csv_dim=prefix+'/'+prefix+from_date+"-"+to_date+"_changeset_dim.csv"
+		nom_date=prefix+'/'+prefix+from_date+"-"+to_date
+		prefix_users=prefix+'/'+prefix+from_date+"-"+to_date+".csv"
+		prefix_team=prefix+'/'+prefix+from_date+"-"+to_date+"-team.csv"
+		prefix_changesets=prefix+'/'+prefix+from_date+"-"+to_date+"-changeset.csv"
 		#
 		csv = open(prefix_users, 'wb')
 		csv_team = open(prefix_team, 'wb')
